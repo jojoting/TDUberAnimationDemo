@@ -15,6 +15,7 @@
 		EBE8D04A1D5C199900F50F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE8D0481D5C199900F50F36 /* LaunchScreen.storyboard */; };
 		EBE8D0551D5C199900F50F36 /* TDUberAnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE8D0541D5C199900F50F36 /* TDUberAnimationDemoTests.m */; };
 		EBE8D0601D5C199900F50F36 /* TDUberAnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE8D05F1D5C199900F50F36 /* TDUberAnimationDemoUITests.m */; };
+		EBE8D0751D5C1C9300F50F36 /* TDUberLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE8D0741D5C1C9300F50F36 /* TDUberLogoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		EBE8D05B1D5C199900F50F36 /* TDUberAnimationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDUberAnimationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE8D05F1D5C199900F50F36 /* TDUberAnimationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDUberAnimationDemoUITests.m; sourceTree = "<group>"; };
 		EBE8D0611D5C199900F50F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE8D0731D5C1C9300F50F36 /* TDUberLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDUberLogoView.h; path = TDUberLaunchVIew/TDUberLogoView.h; sourceTree = "<group>"; };
+		EBE8D0741D5C1C9300F50F36 /* TDUberLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDUberLogoView.m; path = TDUberLaunchVIew/TDUberLogoView.m; sourceTree = "<group>"; };
+		EBE8D0761D5C629800F50F36 /* TDGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDGlobal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		EBE8D0391D5C199900F50F36 /* TDUberAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EBE8D0761D5C629800F50F36 /* TDGlobal.h */,
+				EBE8D0721D5C1C5D00F50F36 /* TDUberLaunchView */,
 				EBE8D03D1D5C199900F50F36 /* AppDelegate.h */,
 				EBE8D03E1D5C199900F50F36 /* AppDelegate.m */,
 				EBE8D0401D5C199900F50F36 /* ViewController.h */,
@@ -138,6 +144,15 @@
 				EBE8D0611D5C199900F50F36 /* Info.plist */,
 			);
 			path = TDUberAnimationDemoUITests;
+			sourceTree = "<group>";
+		};
+		EBE8D0721D5C1C5D00F50F36 /* TDUberLaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				EBE8D0731D5C1C9300F50F36 /* TDUberLogoView.h */,
+				EBE8D0741D5C1C9300F50F36 /* TDUberLogoView.m */,
+			);
+			name = TDUberLaunchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE8D0421D5C199900F50F36 /* ViewController.m in Sources */,
+				EBE8D0751D5C1C9300F50F36 /* TDUberLogoView.m in Sources */,
 				EBE8D03F1D5C199900F50F36 /* AppDelegate.m in Sources */,
 				EBE8D03C1D5C199900F50F36 /* main.m in Sources */,
 			);
