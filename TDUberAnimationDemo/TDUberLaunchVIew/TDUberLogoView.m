@@ -60,9 +60,9 @@ const CGFloat lineWidth = 5.0;;
 #pragma mark - set up method
 - (void)setPrivateProperty{
     _strokeEndTimingFunction = [CAMediaTimingFunction functionWithControlPoints:1.0 :0.0 :0.42 :1.0];
-    _circleLayerTimingFunction = [CAMediaTimingFunction functionWithControlPoints:.25 :0.0 :0.20 :1.0];
-    _squareLayerTimingFunction = [CAMediaTimingFunction functionWithControlPoints:.65 :0.0 :0.40 :1.0];
-    _fadeInSquareTimingFunction = [CAMediaTimingFunction functionWithControlPoints:.17 :0.00 :.85 :1.00];
+    _circleLayerTimingFunction = [CAMediaTimingFunction functionWithControlPoints:.25 :0.0 :0.2 :1.0];
+    _squareLayerTimingFunction = [CAMediaTimingFunction functionWithControlPoints:.25 :0.0 :0.45 :1.0];
+    _fadeInSquareTimingFunction = [CAMediaTimingFunction functionWithControlPoints:.12 :0.00 :0.75 :1.00];
 }
 #pragma mark - animation
 - (void)startCircleLayerAnimation{
@@ -135,7 +135,7 @@ const CGFloat lineWidth = 5.0;;
     //config
     NSArray *keyTimes = @[@0.0, @(1.0-kAnimationDurationDelay/kAnimationDuration),@1.0];
     NSArray *timingFunctions = @[_fadeInSquareTimingFunction,_squareLayerTimingFunction];
-    CGFloat tempLength = 2/3 * kSquareLength;
+    CGFloat tempLength = kSquareLength *2/3;
     
     //bounds animation
     CAKeyframeAnimation *boundsAnimation = [CAKeyframeAnimation animationWithKeyPath:@"bounds"];
@@ -169,7 +169,7 @@ const CGFloat lineWidth = 5.0;;
 
 - (void)startMaskLayerAnimation{
     //config
-    CGFloat tempLength = 2/3 * kSquareLength;
+    CGFloat tempLength = kSquareLength *2/3;
 
     //bounds animation
     CABasicAnimation *boundsAnimation = [CABasicAnimation animationWithKeyPath:@"bounds"];
@@ -237,7 +237,7 @@ const CGFloat lineWidth = 5.0;;
         _squareLayer.frame = CGRectMake(- kSquareLength / 2, - kSquareLength / 2, kSquareLength, kSquareLength);
         _squareLayer.cornerRadius = 1.5;
         _squareLayer.allowsGroupOpacity = YES;
-        _squareLayer.backgroundColor = defaultColor.CGColor;
+        _squareLayer.backgroundColor = [UIColor whiteColor].CGColor;
     }
     return _squareLayer;
 }

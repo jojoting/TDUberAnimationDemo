@@ -16,6 +16,8 @@
 		EBE8D0551D5C199900F50F36 /* TDUberAnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE8D0541D5C199900F50F36 /* TDUberAnimationDemoTests.m */; };
 		EBE8D0601D5C199900F50F36 /* TDUberAnimationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE8D05F1D5C199900F50F36 /* TDUberAnimationDemoUITests.m */; };
 		EBE8D0751D5C1C9300F50F36 /* TDUberLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE8D0741D5C1C9300F50F36 /* TDUberLogoView.m */; };
+		EBE8D07C1D5DC50E00F50F36 /* TDUberGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE8D07B1D5DC50E00F50F36 /* TDUberGridView.m */; };
+		EBE8D0821D5DC53F00F50F36 /* TDUberGridContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE8D0811D5DC53F00F50F36 /* TDUberGridContainerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		EBE8D0731D5C1C9300F50F36 /* TDUberLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDUberLogoView.h; path = TDUberLaunchVIew/TDUberLogoView.h; sourceTree = "<group>"; };
 		EBE8D0741D5C1C9300F50F36 /* TDUberLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDUberLogoView.m; path = TDUberLaunchVIew/TDUberLogoView.m; sourceTree = "<group>"; };
 		EBE8D0761D5C629800F50F36 /* TDGlobal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDGlobal.h; sourceTree = "<group>"; };
+		EBE8D07A1D5DC50E00F50F36 /* TDUberGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDUberGridView.h; sourceTree = "<group>"; };
+		EBE8D07B1D5DC50E00F50F36 /* TDUberGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDUberGridView.m; sourceTree = "<group>"; };
+		EBE8D0801D5DC53F00F50F36 /* TDUberGridContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDUberGridContainerView.h; sourceTree = "<group>"; };
+		EBE8D0811D5DC53F00F50F36 /* TDUberGridContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDUberGridContainerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,10 @@
 			children = (
 				EBE8D0731D5C1C9300F50F36 /* TDUberLogoView.h */,
 				EBE8D0741D5C1C9300F50F36 /* TDUberLogoView.m */,
+				EBE8D07A1D5DC50E00F50F36 /* TDUberGridView.h */,
+				EBE8D07B1D5DC50E00F50F36 /* TDUberGridView.m */,
+				EBE8D0801D5DC53F00F50F36 /* TDUberGridContainerView.h */,
+				EBE8D0811D5DC53F00F50F36 /* TDUberGridContainerView.m */,
 			);
 			name = TDUberLaunchView;
 			sourceTree = "<group>";
@@ -285,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE8D0821D5DC53F00F50F36 /* TDUberGridContainerView.m in Sources */,
 				EBE8D0421D5C199900F50F36 /* ViewController.m in Sources */,
 				EBE8D0751D5C1C9300F50F36 /* TDUberLogoView.m in Sources */,
 				EBE8D03F1D5C199900F50F36 /* AppDelegate.m in Sources */,
+				EBE8D07C1D5DC50E00F50F36 /* TDUberGridView.m in Sources */,
 				EBE8D03C1D5C199900F50F36 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +526,7 @@
 				EBE8D0661D5C199900F50F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBE8D0671D5C199900F50F36 /* Build configuration list for PBXNativeTarget "TDUberAnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				EBE8D0691D5C199900F50F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBE8D06A1D5C199900F50F36 /* Build configuration list for PBXNativeTarget "TDUberAnimationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				EBE8D06C1D5C199900F50F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,6 +10,8 @@
 #import "TDUberLogoView.h"
 #import "TDGlobal.h"
 
+#define kScrrenWidth ([UIScreen mainScreen].bounds.size.width)
+
 @interface ViewController ()
 
 @end
@@ -27,6 +29,8 @@
     
     [self.view addSubview:uberLogoView];
     [uberLogoView startAnimation];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
